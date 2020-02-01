@@ -10,32 +10,30 @@ public class CastlePart : MonoBehaviour
     public Rigidbody2D rb;
     private TargetJoint2D targetJoint2D;
     private bool isMoving = false;
+    private BoxCollider2D bc;
 
     private void Awake()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        bc = gameObject.GetComponent<BoxCollider2D>();
     }
 
     private void Update()
     {
         if (isMoving)
         {
-            //rb.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            targetJoint2D.target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            rb.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
     }
 
     void OnMouseDown()
     {
-        // rb.isKinematic = true;
-        
-        isMoving = castle.StartMovement();
-        if (isMoving)
+        if (castle.StartMovement())
         {
-            targetJoint2D = gameObject.AddComponent<TargetJoint2D>();
-            
-            targetJoint2D.anchor = gameObject.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            //targetJoint2D.frequency = 1000;
+            isMoving = true;
+            rb.freezeRotation = true;
+            rb.isKinematic = true;
+            bc.enabled = false;
         }
     }
 
@@ -44,7 +42,9 @@ public class CastlePart : MonoBehaviour
         if (isMoving)
         {
             isMoving = false;
-            // rb.isKinematic = false;
+            rb.freezeRotation = false;
+            bc.enabled = true;
+            rb.isKinematic = false;
             castle.EndMovement();
             Destroy(targetJoint2D);
         }

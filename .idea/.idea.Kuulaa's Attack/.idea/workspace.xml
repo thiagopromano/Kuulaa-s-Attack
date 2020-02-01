@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b776ca39-5925-43d7-85d2-1ff5bbd354e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CastlePart.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CastlePart.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580531769662</updated>
       <workItem from="1580531771886" duration="8191000" />
-      <workItem from="1580575531625" duration="3818000" />
+      <workItem from="1580575531625" duration="4814000" />
     </task>
     <servers />
   </component>
@@ -120,5 +117,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="478" y="28" width="644" height="804" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1580573304302" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1580581695795">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1580581695795" />
   </component>
 </project>
