@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b776ca39-5925-43d7-85d2-1ff5bbd354e6" name="Default Changelist" comment="" />
+    <list default="true" id="b776ca39-5925-43d7-85d2-1ff5bbd354e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +16,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/CastlePart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/90/37ca0b75/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,9 +31,10 @@
         <option value="$PROJECT_DIR$/Assets/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/CastlePart.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameDirector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" />
       </list>
     </option>
   </component>
@@ -81,7 +87,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580531769662</updated>
-      <workItem from="1580531771886" duration="7515000" />
+      <workItem from="1580531771886" duration="8191000" />
+      <workItem from="1580575531625" duration="3818000" />
     </task>
     <servers />
   </component>
@@ -95,7 +102,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
