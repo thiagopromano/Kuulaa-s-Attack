@@ -37,5 +37,11 @@ public class Cannon : MonoBehaviour
         yield return new WaitForSeconds(releaseTime);
 
         GetComponent<SpringJoint2D>().enabled = false;
+        this.enabled = false;
+
+
+        yield return new WaitForSeconds(5f);
+        GameDirector.director.EndFirstPlayerTurn();
+        Destroy(gameObject);
     }
 }
