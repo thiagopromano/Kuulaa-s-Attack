@@ -10,6 +10,7 @@ public class CastlePart : MonoBehaviour
     public Rigidbody2D rb;
     private TargetJoint2D targetJoint2D;
     private bool isMoving = false;
+    public int massReductionMultiplier = 200;
 
     private void Awake()
     {
@@ -35,7 +36,10 @@ public class CastlePart : MonoBehaviour
             targetJoint2D = gameObject.AddComponent<TargetJoint2D>();
             
             targetJoint2D.anchor = gameObject.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            //targetJoint2D.frequency = 1000;
+            
+            rb.mass = rb.mass / massReductionMultiplier;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            
         }
     }
 
@@ -46,6 +50,8 @@ public class CastlePart : MonoBehaviour
             isMoving = false;
             // rb.isKinematic = false;
             castle.EndMovement();
+            rb.constraints = RigidbodyConstraints2D.None;
+            rb.mass = rb.mass * massReductionMultiplier;
             Destroy(targetJoint2D);
         }
     }

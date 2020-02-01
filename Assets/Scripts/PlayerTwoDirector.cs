@@ -8,6 +8,7 @@ public class PlayerTwoDirector : MonoBehaviour
     
     public int playerTwoMovements = 0;
     public int maxPlayerTwoMovements = 4;
+    public int CastlePartMassReductionMultiplier = 200;
 
     void Awake()
     {
@@ -16,8 +17,9 @@ public class PlayerTwoDirector : MonoBehaviour
             GameObject g = gameObject.transform.GetChild(i).gameObject;
             if(g.GetComponent<CastlePart>()==null)
             {
-                g.AddComponent<CastlePart>().castle = this;
-                
+                CastlePart castlePart = g.AddComponent<CastlePart>();
+                castlePart.castle = this;
+                castlePart.massReductionMultiplier = CastlePartMassReductionMultiplier;
             }
         }
     }

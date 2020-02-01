@@ -906,6 +906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTwoMovements: 0
   maxPlayerTwoMovements: 4
+  CastlePartMassReductionMultiplier: 2
 --- !u!1001 &1080996254
 PrefabInstance:
   m_ObjectHideFlags: 0
