@@ -5,43 +5,26 @@ using UnityEngine;
 
 public class Cannon : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    
+    public GameObject bulletPrefab;
+
     private float releaseTime = .15f;
 
     private bool isPressed = false;
 
     private void Update()
     {
-        if (isPressed)
+        gameObject.transform.Rotate(Vector3.forward, Input.GetAxis("Mouse ScrollWheel") * 90f);
+        if (Input.GetKeyDown("space"))
         {
-            rb.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            fire();
         }
     }
 
-    void OnMouseDown()
+    private void fire()
     {
-        rb.isKinematic = true;
-        isPressed = true;
-    }
+        GameObject kuulinha = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        var angle = Math.PI * gameObject.transform.rotation.normalized.eulerAngles.z / 180;
 
-    void OnMouseUp()
-    {
-        isPressed = false;
-        rb.isKinematic = false;
-        StartCoroutine(Release());
-    }
-
-    IEnumerator Release()
-    {
-        yield return new WaitForSeconds(releaseTime);
-
-        GetComponent<SpringJoint2D>().enabled = false;
-        this.enabled = false;
-
-
-        yield return new WaitForSeconds(5f);
-        GameDirector.director.EndFirstPlayerTurn();
-        Destroy(gameObject);
+        kuulinha.GetComponent<Rigidbody2D>().velocity = new Vector2((float) Math.Cos(angle), (float) Math.Sin(angle))*100;
     }
 }
