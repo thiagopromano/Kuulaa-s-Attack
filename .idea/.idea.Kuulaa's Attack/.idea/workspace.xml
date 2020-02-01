@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b776ca39-5925-43d7-85d2-1ff5bbd354e6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Kuulinha.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Kuulinha.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,13 +16,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PlayerOneDirector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/90/37ca0b75/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerOneDirector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/d9/a60c08db/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cannon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/90/37ca0b75/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/db/b173059e/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/d9/a60c08db/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F38C71C8-6AA6-4E29-9D4C-EA9FB7C715E1/7a/262acec0/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameDirector.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -30,15 +34,19 @@
         <option value="$PROJECT_DIR$/Assets/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/CastlePart.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameDirector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Kuulinhaa.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerOneDirector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1XBuNaaV91ENrJGDzXoHnfxkXkK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -110,13 +118,21 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="498" height="446" key="SwitcherDM" timestamp="1580573288299">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1580590341747">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1600.860@0.0.1600.860" timestamp="1580573288299" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1600.860@0.0.1600.860" timestamp="1580590341747" />
     <state x="478" y="28" width="644" height="804" key="find.popup" timestamp="1580573304302">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="478" y="28" width="644" height="804" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1580573304302" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1580592817164">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1580592817164" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1580592481200">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1580592481200" />
   </component>
 </project>
