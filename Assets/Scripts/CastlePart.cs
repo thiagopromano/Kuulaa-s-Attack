@@ -21,25 +21,25 @@ public class CastlePart : MonoBehaviour
     {
         if (isMoving)
         {
-            //rb.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             targetJoint2D.target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            rb.rotation += Input.GetAxis("Mouse ScrollWheel") * 90f;
         }
     }
 
     void OnMouseDown()
     {
         // rb.isKinematic = true;
-        
+
         isMoving = castle.StartMovement();
         if (isMoving)
         {
             targetJoint2D = gameObject.AddComponent<TargetJoint2D>();
-            
-            targetJoint2D.anchor = gameObject.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            
+
+            targetJoint2D.anchor =
+                gameObject.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+
             rb.mass = rb.mass / massReductionMultiplier;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-            
         }
     }
 
