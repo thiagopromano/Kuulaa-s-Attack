@@ -11,6 +11,7 @@
           <e p="Cannon.cs" t="Include" />
           <e p="CastlePart.cs" t="Include" />
           <e p="GameDirector.cs" t="Include" />
+          <e p="NewWall.cs" t="Include" />
           <e p="PlayerOneDirector.cs" t="Include" />
           <e p="PlayerTwoDirector.cs" t="Include" />
           <e p="Sheep.cs" t="Include" />

@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1695085024465567728, guid: 769f7d6e555339d4b84b199b0a4a9736,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0048854947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695085024465567728, guid: 769f7d6e555339d4b84b199b0a4a9736,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.6751609
+      objectReference: {fileID: 0}
     - target: {fileID: 1695085024465567729, guid: 769f7d6e555339d4b84b199b0a4a9736,
         type: 3}
       propertyPath: m_Sprite
@@ -71,7 +81,7 @@ PrefabInstance:
     - target: {fileID: 1695085024465567734, guid: 769f7d6e555339d4b84b199b0a4a9736,
         type: 3}
       propertyPath: m_Name
-      value: Wood1
+      value: Wood2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 769f7d6e555339d4b84b199b0a4a9736, type: 3}

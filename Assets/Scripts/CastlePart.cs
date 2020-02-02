@@ -10,7 +10,7 @@ public class CastlePart : MonoBehaviour
     public Rigidbody2D rb;
     private TargetJoint2D targetJoint2D;
     private bool isMoving = false;
-    public int massReductionMultiplier = 200;
+    private bool isNew = false;
 
     private void Awake()
     {
@@ -30,17 +30,34 @@ public class CastlePart : MonoBehaviour
     {
         // rb.isKinematic = true;
 
-        isMoving = castle.StartMovement();
+        isMoving = castle.StartMovement(isNew);
+        isNew = false;
         if (isMoving)
         {
+            rb.constraints = RigidbodyConstraints2D.None;
+            rb.simulated = true;
             targetJoint2D = gameObject.AddComponent<TargetJoint2D>();
 
             targetJoint2D.anchor =
                 gameObject.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
 
-            rb.mass = rb.mass / massReductionMultiplier;
+            rb.mass = rb.mass / castle.CastlePartMassReductionMultiplier;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
+    }
+    
+    private void OnCollisionEnter2D(Collision2D colInfo)
+    {
+        if (colInfo.relativeVelocity.magnitude > castle.maxImpact && !castle.indestructible)
+        {
+            Die();
+        }
+    }
+    
+    private void Die()
+    {
+        Instantiate(castle.ExplosionPrefab, gameObject.transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
     void OnMouseUp()
@@ -51,8 +68,14 @@ public class CastlePart : MonoBehaviour
             // rb.isKinematic = false;
             castle.EndMovement();
             rb.constraints = RigidbodyConstraints2D.None;
-            rb.mass = rb.mass * massReductionMultiplier;
+            rb.mass = rb.mass * castle.CastlePartMassReductionMultiplier;
             Destroy(targetJoint2D);
         }
+    }
+
+    public void setNew()
+    {
+        isNew = true;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 }
