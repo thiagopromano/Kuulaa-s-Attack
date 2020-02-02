@@ -6,6 +6,7 @@ using UnityEngine.Serialization;
 
 public class GameDirector : MonoBehaviour
 {
+    public TextMesh shotCount;
     public PlayerOneDirector playerOneDirector;
     public PlayerTwoDirector playerTwoDirector;
     public int currentPlayer = 1;
@@ -14,9 +15,11 @@ public class GameDirector : MonoBehaviour
     public GameObject attackScreenPrefab;
     public GameObject defendScreenPrefab;
     public GameObject kuulaaWinScreenPrefab;
+    public GameObject kuulaaLoseScreenPrefab;
     public Vector3 screensPos;
     public GameObject sheepees;
     private bool gameEnded = false;
+    public int shots = 6;
 
     void Start()
     {
@@ -26,6 +29,10 @@ public class GameDirector : MonoBehaviour
 
     public void EndFirstPlayerTurn()
     {
+        if (shots <= 0)
+        {
+            EndGame(false);
+        }
         if (!gameEnded)
             StartCoroutine(ShowStartPlayerTwo());
     }
@@ -50,7 +57,7 @@ public class GameDirector : MonoBehaviour
     {
         if (sheepees.transform.childCount <= 1)
         {
-            EndGame();
+            EndGame(true);
         }
 
         return false;
@@ -73,9 +80,20 @@ public class GameDirector : MonoBehaviour
         playerOneDirector.EndTurn();
     }
 
-    void EndGame()
+    void EndGame(bool kuulaWin)
     {
         gameEnded = true;
-        var screen = Instantiate(kuulaaWinScreenPrefab, kuulaaWinScreenPrefab.transform.position, Quaternion.identity);
+        if (kuulaWin)
+             Instantiate(kuulaaWinScreenPrefab, kuulaaWinScreenPrefab.transform.position, Quaternion.identity);
+        else
+        {
+            Instantiate(kuulaaLoseScreenPrefab, kuulaaLoseScreenPrefab.transform.position, Quaternion.identity);
+        }
+    }
+
+    public void reduceShots()
+    {
+        shots--;
+        shotCount.text = shots.ToString();
     }
 }

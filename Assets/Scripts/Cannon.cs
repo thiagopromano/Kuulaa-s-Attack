@@ -12,6 +12,7 @@ public class Cannon : MonoBehaviour
     public float angleAdjustmentFactor = 60f;
     public float AngleMax = 80f;
     public float angleOffset = 10f;
+    
 
     private void Update()
     {
@@ -34,6 +35,7 @@ public class Cannon : MonoBehaviour
 
     private void fire()
     {
+        GameDirector.director.reduceShots();
         var pos = transform.position;
         pos.z = -4;
         pos.y -= 0.42f;
@@ -42,4 +44,5 @@ public class Cannon : MonoBehaviour
 
         kuulinha.GetComponent<Rigidbody2D>().velocity = new Vector2((float) Math.Cos(angle), (float) Math.Sin(angle))*Force;
     }
+
 }
