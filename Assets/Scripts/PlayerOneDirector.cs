@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class PlayerOneDirector : MonoBehaviour
 {
-    void Awake()
+    public Cannon cannon;
+    public void EndTurn()
     {
+        cannon.enabled = false;
     }
-
     public void StartTurn()
     {
-        this.enabled = true;
+        cannon.enabled = true;
     }
 }

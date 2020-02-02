@@ -6,6 +6,7 @@ using UnityEngine.Serialization;
 public class GameDirector : MonoBehaviour
 {
 
+    public PlayerOneDirector playerOneDirector;
     public PlayerTwoDirector playerTwoDirector;
     public GameObject hook;
     public int currentPlayer = 1;
@@ -21,13 +22,11 @@ public class GameDirector : MonoBehaviour
     {
         Debug.Log("End player 1 turn");
         playerTwoDirector.StartTurn();
+        playerOneDirector.EndTurn();
     }
     public void EndSecondPlayerTurn()
     {
         Debug.Log("End player 2 turn");
-        var newKuulinhaPosition = hook.transform.position;
-        newKuulinhaPosition.z = newKuulinhaPosition.z - 1;
-        var newKuulinha = Instantiate(kuulinhaPrefab, newKuulinhaPosition, Quaternion.identity);
-        newKuulinha.GetComponent<SpringJoint2D>().connectedBody = hook.GetComponent<Rigidbody2D>();
+        playerOneDirector.StartTurn();
     }
 }

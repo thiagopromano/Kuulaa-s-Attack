@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    
-    
-    private float releaseTime = .15f;
-
-    private bool isPressed = false;
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        StartCoroutine(Release());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator Release()
     {
-        
+        yield return new WaitForSeconds(5f);
+        GameDirector.director.EndFirstPlayerTurn();
+        Destroy(gameObject);
     }
 }
