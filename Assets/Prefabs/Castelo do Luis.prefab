@@ -44,5 +44,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTwoMovements: 0
-  maxPlayerTwoMovements: 4
+  maxPlayerTwoMovements: 3
   CastlePartMassReductionMultiplier: 200
+  maxImpact: 10
+  newWoodPosition: {x: 0, y: 3.26, z: 0}
+  ExplosionPrefab: {fileID: 1909519142418887600, guid: 10f8833f191944f4e9f0e00a81174171,
+    type: 3}
+  WoodParts:
+  - {fileID: 1695085024465567734, guid: 769f7d6e555339d4b84b199b0a4a9736, type: 3}
+  - {fileID: 5740300083974556562, guid: e197795d82ec34a4aafbab65a5bffe51, type: 3}
+  - {fileID: 1971552974234359893, guid: c48f4c1523c8c5742926da5a7fa4c3c7, type: 3}
+  optionsPopUpPrefab: {fileID: 657365112682575872, guid: 6673b28166fc5754d838926846076560,
+    type: 3}
+  indestructible: 0
