@@ -27,6 +27,7 @@ public class Sheep : MonoBehaviour
 
     private void Die()
     {
+        GameDirector.director.oneLessSheep();
         Destroy(gameObject);
     }
 }
