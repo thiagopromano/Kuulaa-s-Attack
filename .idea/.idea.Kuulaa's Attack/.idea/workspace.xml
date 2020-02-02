@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b776ca39-5925-43d7-85d2-1ff5bbd354e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kuulaa's Attack/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CastlePart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Kuulinha.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Kuulinha.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Options.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Options.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sheepee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sheepee.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wood1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wood1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerTwoDirector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/box.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/box.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/attack_message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/choose_message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/kuulaa_loose_message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/kuulaa_won_message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/message-board.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/message-board.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/repair_message.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

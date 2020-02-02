@@ -44,7 +44,7 @@ public class PlayerTwoDirector : MonoBehaviour
 
     private void newWoodForChoose()
     {
-        newWood = Instantiate(WoodParts[Random.Range(0, WoodParts.Length)], newWoodPosition, Quaternion.identity);
+        newWood = Instantiate(WoodParts[Random.Range(0, WoodParts.Length)], newWoodPosition + new Vector3(-5,0), Quaternion.identity);
         CastlePart castlePart = newWood.AddComponent<CastlePart>();
         castlePart.castle = this;
         castlePart.setNew();
