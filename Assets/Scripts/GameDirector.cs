@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -39,6 +40,12 @@ public class GameDirector : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (gameEnded && Input.GetKeyDown(KeyCode.Return))
+            Application.LoadLevel(Application.loadedLevel);
+    }
+
     public bool oneLessSheep()
     {
         if (sheepees.transform.childCount <= 1)
@@ -68,6 +75,7 @@ public class GameDirector : MonoBehaviour
 
     void EndGame()
     {
+        gameEnded = true;
         var screen = Instantiate(kuulaaWinScreenPrefab, kuulaaWinScreenPrefab.transform.position, Quaternion.identity);
     }
 }
